@@ -36,6 +36,6 @@ describe("validateCurrentPage", () => {
         const list2: FactsDefinition = { ...list, current_page: 2 }
         jest.spyOn(Requests, "getFactsList").mockImplementationOnce(() => Promise.resolve(list2))
         const resp = await validateCurrentPage();
-        expect(resp).not.toBeFalsy();
+        expect(resp).toBeFalsy();
     })
 });
