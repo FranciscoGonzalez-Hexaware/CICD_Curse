@@ -1,1 +1,1 @@
-console.log("upload")
+console.log("upload");
